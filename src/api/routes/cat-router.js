@@ -21,4 +21,6 @@ catRouter
 
 catRouter.route('/:id').get(getCatById).put(putCat).delete(deleteCat);
 
+catRouter.route('/owner/:id').get();
+
 export default catRouter;

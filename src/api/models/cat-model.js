@@ -58,4 +58,15 @@ const removeCat = async (id) => {
   return {message: 'success'};
 };
 
-export {listAllCats, findCatById, addCat, modifyCat, removeCat};
+const findCatByOwnerId = async (ownerId) => {
+  // todo: Implement this function
+};
+
+export {
+  listAllCats,
+  findCatById,
+  addCat,
+  modifyCat,
+  removeCat,
+  findCatByOwnerId,
+};

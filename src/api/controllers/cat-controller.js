@@ -20,6 +20,7 @@ const getCatById = async (req, res) => {
 };
 
 const postCat = async (req, res) => {
+  req.body.filename = req.file.filename;
   const result = await addCat(req.body);
   if (result.cat_id) {
     res.status(201);
@@ -51,4 +52,8 @@ const deleteCat = async (req, res) => {
   res.sendStatus(200);
 };
 
-export {getCat, getCatById, postCat, putCat, deleteCat};
+const getCatByOwnerId = async (req, res) => {
+  // TODO: Implement this function
+};
+
+export {getCat, getCatById, postCat, putCat, deleteCat, getCatByOwnerId};
