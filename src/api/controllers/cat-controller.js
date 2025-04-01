@@ -38,7 +38,6 @@ const putCat = async (req, res) => {
   } else {
     res.sendStatus(404);
   }
-  res.sendStatus(200);
 };
 
 const deleteCat = async (req, res) => {
@@ -49,7 +48,6 @@ const deleteCat = async (req, res) => {
   } else {
     res.sendStatus(404);
   }
-  res.sendStatus(200);
 };
 
 const getCatByOwnerId = async (req, res) => {
